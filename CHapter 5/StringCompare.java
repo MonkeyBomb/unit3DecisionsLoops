@@ -23,6 +23,8 @@ public class StringCompare
     System.out.println(result1);
 
     if (word1.equals(word2))
+    
+      
      System.out.println("word1 is lexicographically equal to word2.");
     else
     System.out.println("word1 is not lexicographically equal to word2.");
@@ -36,5 +38,5 @@ public class StringCompare
     System.out.println("word1 and word2 have the same 3 letter prefix");
     else
     System.out.println("word1 and word2 don't have the same 3 letter prefix");
-}
+    }
 }
