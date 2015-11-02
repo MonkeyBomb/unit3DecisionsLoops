@@ -16,7 +16,7 @@ public class MaxAndMin
                 largest = input;
             }
         }
-        return largest
+        return largest;
     }
 }
        
