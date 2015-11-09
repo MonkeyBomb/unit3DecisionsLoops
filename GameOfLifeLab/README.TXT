@@ -34,6 +34,16 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal
 
 Nonfunctional Requirements:
 
+how large is the grid? is it boundless? The grid will be 1000x1000
+what do live cells look like? They are going to be a black colour
+what do dead cells look like? They are going to look grey
+what pattern is displayed? are multiple patterns available? Im not sure about the patern yet but for
+sure there will be more than one
+are patterns chosen in code, chosen randomly, chosen by user? I think that it will be randomly generated
+how long does the game run? does it run forever? does it prompt the user to continue? i think it will run for 15 seconds
+what is the time interval between generations? 1 second
+what about edge cases? does it wrap around? I Think i would like it too loop around so that it doesnt stop at the edge
+
 * the program must be implemented in Java and utilize the GridWorld platform
 * I recommend not use GridWorld’s execution engine to produce subsequent
 	generations. It will be easier to implement the unit test if you directly
