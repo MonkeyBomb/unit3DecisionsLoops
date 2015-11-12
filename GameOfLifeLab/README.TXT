@@ -37,7 +37,7 @@ Nonfunctional Requirements:
 how large is the grid? is it boundless? The grid will be 1000x1000
 what do live cells look like? They are going to be a black colour
 what do dead cells look like? They are going to look grey
-what pattern is displayed? are multiple patterns available? Im not sure about the patern yet but for
+what pattern is displayed? are multiple patterns available? Im not sure about the pattern yet but for
 sure there will be more than one
 are patterns chosen in code, chosen randomly, chosen by user? I think that it will be randomly generated
 how long does the game run? does it run forever? does it prompt the user to continue? i think it will run for 15 seconds
