@@ -101,10 +101,36 @@ public class GameOfLife
         
         // create the grid, of the specified size, that contains Actors
         Grid<Actor> grid = world.getGrid();
-        
+        BoundedGrid<Actor> grid1 = new BoundedGrid<Actor>(ROWS, COLS);
         // insert magic here...
-        
-        
+        for (int row = 0; row < ROWS;row++)
+        {
+            for(int col = 0; col < COLS; col++)
+            {
+                Location loc = new Location(row, col);
+                if (getActor(row,col) != null)
+                {
+                    if (grid.getNeighbors(loc).size()<2 || grid.getNeighbors(loc).size()>3)
+                    {
+                      
+                    }
+                    else
+                    {
+                        if(grid.getNeighbors(loc).size()== 2)
+                        {
+                            Rock rock = new Rock();
+                            Location loc1 = new Location(row, col);
+                            grid1.put(loc1, rock);
+                        }
+                        
+                    }
+                    
+                }
+                
+                
+               
+            }
+        }
     }
     
     /**
