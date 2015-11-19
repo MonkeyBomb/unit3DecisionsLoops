@@ -120,6 +120,10 @@ public class GameOfLifeTest
         final int COLS = game.getNumCols();
         game.createNextGeneration();
         game.createNextGeneration();
+        game.createNextGeneration();
+        game.createNextGeneration();
+        
+        
 
         for(int row = 0; row < ROWS; row++)
         {
@@ -129,13 +133,13 @@ public class GameOfLifeTest
                 Actor cell = game.getActor(row, col);
 
                 // if the cell at the current row and col should be alive, assert that the actor is not null
-                if(     (row == 2 && col == 2) ||
-                        (row == 2 && col == 3) ||
-                        (row == 3 && col == 1) ||
-                        (row == 3 && col == 4) ||
-                        (row == 4 && col == 2) ||
-                        (row == 4 && col == 3) ||
-                        (row == 5 && col == 3)) 
+                if(     (row == 3 && col == 2) ||
+                        (row == 3 && col == 3) ||
+                        (row == 4 && col == 1) ||
+                        (row == 4 && col == 4) ||
+                        (row == 5 && col == 2) ||
+                        (row == 5 && col == 3) ||
+                        (row == 6 && col == 3)) 
                 {
                     assertNotNull("expected alive cell at (" + row + ", " + col + ")", cell);
                 }

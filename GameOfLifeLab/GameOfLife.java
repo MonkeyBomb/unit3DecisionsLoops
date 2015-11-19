@@ -116,7 +116,6 @@ public class GameOfLife
                     }
                     else
                     {
-                        if(grid.getNeighbors(loc).size()== 2)
                         {
                             Rock rock = new Rock();
                             Location loc1 = new Location(row, col);
@@ -126,11 +125,21 @@ public class GameOfLife
                     }
                     
                 }
-                
+                else
+                {
+                  if(grid.getNeighbors(loc).size() == 3)
+                  {
+                      Rock rock = new Rock();
+                      Location loc1 = new Location(row, col);
+                      grid1.put(loc1, rock);
+                    }
+                      
+                }
                 
                
             }
         }
+        world.setGrid(grid1);
     }
     
     /**
